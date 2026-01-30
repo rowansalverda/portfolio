@@ -1,0 +1,449 @@
+/* This is a CSS Style Sheet for my Personal Website */
+
+body { 
+    background-color: #F3F5F9;
+    margin: 0px; 
+    padding: 0px;
+    font-family: "Varela Round", sans-serif;
+    line-height: 1.2;
+}
+
+/* NAV BAR */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 40px; 
+    font-family: "Varela Round", sans-serif; 
+    font-size: clamp(12px, 1.4vw, 18px);
+    letter-spacing: 1px; 
+}
+
+.logo img {
+    height: clamp(20px, 6vw, 60px); 
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* NAV LINKS */
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    margin-left: 6px;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #c0291e;
+}
+
+.nav-links a:active {
+    color: #1651bd;
+}
+
+/* MAIN TITLE */
+
+.main-title-section {
+    text-align: center;
+}
+
+.main-title {
+    font-family: "Pirata One", serif;
+    font-size: clamp(3rem, 12vw, 12rem);
+    text-align: center; 
+    width: 100%; 
+    display: block; 
+    margin: 0; 
+    padding: 15px 0; 
+    border-top: 3px solid black; 
+    border-bottom: 3px solid black; 
+}
+
+.main-title a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.main-title a:hover {
+    color: #1651bd;
+}
+
+.main-title a:active {
+    color: #c0291e;
+}
+
+/* PAGE SECTION TITLE */
+
+.page-section-title {
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin: 20px 0 30px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.page-section-title h2 {
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(22px, 4vw, 50px);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.languages-title {
+    border-top: 3px solid black;
+    padding-top: 12px;
+    margin-top: 40px;
+}
+
+/* ABOUT ME SECTION */
+
+.about-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.about-title {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: clamp(20px, 3vw, 40px);
+    margin-bottom: 10px;
+}
+
+.about-container {
+    font-family: "Varela Round", sans-serif;
+    line-height: 1.4;
+    font-size: clamp(14px, 1.2vw, 18px);
+    text-align: justify;
+}
+
+.about-video {
+    width: min(50%, 50%);  
+    float: right !important;
+    margin: 0 0 20px 20px;
+    border-radius: 8px;
+}
+
+.about-text {
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* RECENT EXPLORATIONS SECTION */
+
+.explorations-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.explorations-title {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: clamp(20px, 3vw, 40px);
+    margin-bottom: 12px;
+}
+
+.explorations-title1 { /*this format will be used by all Recent Explorations*/
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: clamp(18px, 2vw, 28px);
+    margin-bottom: 8px;
+}
+
+.explorations-container {
+    font-family: "Varela Round", sans-serif;
+    line-height: 1.4;
+    font-size: clamp(14px, 1.2vw, 18px);
+    text-align: justify;
+}
+
+.explorations-container-right {
+    clear: both;
+}
+
+.explorations-container-auvic {
+    clear: both;
+    margin-bottom: 60px;
+}
+
+.explorations-video1 {
+    width: min(30%, 30%);
+    float: left !important;
+    margin: 0 20px 20px 0;
+    border-radius: 8px;
+}
+
+.explorations-video2 {
+    width: min(30%, 30%);
+    float: right !important;
+    margin: 0 0 20px 20px;
+    border-radius: 8px;
+}
+
+.explorations-text {
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.explorations-text-right {
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* EXPLORATIONS BUTTON 1*/
+
+.explorations-button {
+    float: right;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+
+    border-radius: 0;
+
+    margin: 10px 0 10px 20px;
+    text-transform: none;     
+    cursor: pointer;
+}
+
+.explorations-button:hover {
+    background-color: #c0291e;
+}
+
+.explorations-button:active {
+    background-color: #1651bd;
+}
+
+/* EXPLORATIONS BUTTON 2*/
+
+.explorations-button-left {
+    float: left;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+
+    margin: 10px 20px 10px 0;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.explorations-button-left:hover {
+    background-color: #c0291e;
+}
+
+.explorations-button-left:active {
+    background-color: #1651bd;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+    margin-bottom: 0;
+
+    padding: 20px 0;
+    text-align: center;
+
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.contact-title {
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: clamp(20px, 3vw, 40px);
+    margin: 10px 0 15px;
+}
+
+.contact-text {
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.4;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.contact-button {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.contact-button:hover {
+    background-color: #c0291e;
+}
+
+.contact-button:active {
+    background-color: #1651bd;
+}
+
+footer {
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(14px, 1.2vw, 18px);
+    color: black;
+    padding: 5px 0 15px;
+    margin-top: 5px;
+}
+
+/* VIDEOS */
+
+.video-about,
+.video-rockies,
+.video-netherlands,
+.video-auvic {
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    cursor: pointer;
+}
+
+.video-about:hover,
+.video-rockies:hover,
+.video-netherlands:hover,
+.video-auvic:hover {
+    filter: grayscale(0%);
+}
+
+/* THREE COLUMN SECTION */
+
+.three-col-section {
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.three-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-box {
+    width: 33.333%;
+    padding: 20px;
+    border-right: 3px solid black;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.col-box:last-child {
+    border-right: none;
+}
+
+.col-box h3 {
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(18px, 2vw, 28px);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.col-box video {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 6px;
+}
+
+.col-box p {
+    font-size: clamp(14px, 1.2vw, 18px);
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.col-btn {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+    margin-top: 15px;
+    display: inline-block; 
+    transition: background-color 0.2s ease;
+}
+
+.col-btn:hover {
+    background-color: #c0291e;
+}
+
+.col-btn:active {
+    background-color: #1651bd;
+}
+
+.video-work {
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+    cursor: pointer;
+}
+
+.video-work:hover {
+    filter: grayscale(0%);
+}
+
+/* LANGUAGES */
+
+.languages-wrapper {
+    width: 100%;
+    border-bottom: 3px solid black;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.languages-section {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.language-item {
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(18px, 2vw, 28px);
+    margin: 12px 0;
+    transition: color 0.2s ease;
+    cursor: default;
+}
+
+.language-item:hover {
+    color: #c0291e;
+}

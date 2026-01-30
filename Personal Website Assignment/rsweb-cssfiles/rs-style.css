@@ -1,0 +1,206 @@
+/* This is a CSS Style Sheet for my Personal Website Assignment */
+
+body { 
+    margin: 0px; 
+    padding: 0px;
+    font-family: "Varela Round", sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.2;
+}
+
+header {
+    top: 0;
+    left: 0; 
+    width: 100%;
+    background-color: #0c599a;
+    color: white;
+    padding: 12px; 
+    display: flex; 
+    justify-content: center;
+}
+
+h1 {
+    color: #0764a4;
+    padding: 22px; 
+    display: flex; 
+    justify-content: center;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    color: #0764a4;
+    padding: 8px; 
+    display: flex; 
+    justify-content: center;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-family: "Poetsen One", sans-serif; 
+    font-weight: 400;
+}
+
+h3 {
+    display: flex; 
+    justify-content: center;
+    font-size: clamp(1.15rem, 2.3vw, 1.6rem);
+    font-family: "Poetsen One", sans-serif; 
+    font-weight: 400;
+    color: #cfaaad;
+}
+
+details summary {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+p {
+    color: black; 
+    padding: 8px;  
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1rem, 1.5vw, 1.25rem); 
+    line-height: 1.42;
+}
+
+.video-section {
+    position: relative; 
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 1px;
+}
+
+.video-container {
+    width: 100vw;  
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+video {
+    width: 100vw;
+    height: auto;
+    display: block;
+}
+
+.overlay-box {
+    position: absolute; 
+    top: 1px;
+    right: 10%;
+    padding: 16px;
+    border-radius: 10px;
+    text-align: center; 
+    max-width: 80%;
+}
+
+.responsive-img {
+    width: clamp(6rem, 50vw, 50rem);
+    height: auto;
+    margin-top: 12px;
+}
+
+.about-me-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 20px;
+    background-color: white;
+    align-items: flex-start;
+}
+
+.info-box {
+    background-color: #ffffff;
+    border: 2px solid #0764a4;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px gray;
+    padding: 10px;
+    max-width: 45%;
+    min-width: 300px;
+    flex: 1 1 45%;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+.info-box h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: #0764a4;
+    margin-bottom: 12px;
+}
+
+.info-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.info-box p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: black;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: white;
+}
+
+.contact-box {
+    background-color: #0764a4;
+    color: white;
+    padding: 22px;
+    border-radius: 16px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    box-shadow: 0 4px 12px white;
+}
+
+.contact-box h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: white;
+    margin-bottom: 16px;
+}
+
+.contact-box p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-bottom: 24px;
+    color: white;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: white;
+    color: #0764a4;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #cfaaad;
+    color: #0764a4;
+}
+
+footer {
+    text-align: center;
+    font-size: 10px;
+    color: #0764a4;
+}
+
+a {
+    color: #cfaaad;
+    text-decoration: underline;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+}
+
+a:hover {
+    color: #0764a4;
+}
