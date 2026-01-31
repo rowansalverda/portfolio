@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowan Salverda's Website</title>
+    <link rel="stylesheet" href="../rls-website-cssfiles/meyer-reset.css">
+    <link rel="stylesheet" href="../rls-website-cssfiles/rlsweb.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poetsen+One&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--NAV BAR-->
+
+    <header class="nav-bar">
+        <div class="date">November 2025</div>
+        <div class="logo">
+            <img src="../rls-website-media/rls-logo-red.png">
+        </div>
+        <nav class="nav-links">
+            <a href="rls-workexperience.html">Work Experience</a>
+            <a href="rls-education.html">Education</a>
+            <a href="rls-languages-travel.html">Languages & Travel</a>
+            <a href="rls-projects.html">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--MAIN TITLE/WEBSITE NAME-->
+
+    <section class="main-title-section">
+        <h1 class="main-title">
+            <a href="rls-index.html" class="main-title-link">ROWAN SALVERDA</a>
+        </h1>
+    </section>
+
+    <!--ABOUT ME SECTION ON INDEX-->
+
+    <section class="about-section">
+        
+        <h2 class="about-title">ABOUT ME</h2>
+
+        <div class="about-container">
+
+            <video class="about-video video-about" muted loop preload="metadata">
+                <source src="../rls-website-media/rls-aboutvideo.mp4">
+            </video>
+
+            <p class="about-text">
+                Hi! I'm Rowan—part Dutch, part Canadian, and 100% obsessed with languages, culture and how they're connected. <br> <br>
+                I'm passionate about language learning and language revitalization and I spend a lot of time thinking about how language connects to memory, identity and community. My academic and personal interests often overlap, especially when it comes to community-based research and exploring how people remember and tell their stories.<br> <br>
+                As an aspiring polyglot, I speak English, Dutch, and French fluently, hold a certificate in Spanish language and culture, and am currently expanding my linguistic horizons with Catalan, Portuguese, and Indonesian.<br> <br>
+                I'm also someone who loves learning new things, whether that's diving into a new language, exploring design or taking on creative challenges. Alongside my language work, I'm passionate about web design and I'm currently expanding my skills by learning to code through the Circuit Stream Software Development Bootcamp to bring even more creativity and functionality to my projects. <br> <br>
+                When I'm not studying or working, you'll probably find me skiing, hanging out with my dog or enjoying time with friends … ideally somewhere with a good view and even better conversation.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--RECENT EXPLORATIONS SECTION-->
+
+    <section class="explorations-section">
+
+        <h2 class="explorations-title">RECENT EXPLORATIONS</h2>
+
+        <!--RECENT EXPLORATIONS 1 - ROCKY MOUNTAINS-->
+
+        <div class="explorations-container">
+
+            <video class="explorations-video1 video-rockies" muted loop preload="metadata">
+                <source src="../rls-website-media/rockies-video1.mp4">
+            </video>
+
+            <h3 class="explorations-title1">Adventures in the Rocky Mountains</h3>
+
+            <p class="explorations-text">
+                Over the summer, I spent about a week exploring the Rocky Mountains with my friend Merit, who was visiting all the way from the Netherlands. We packed the trip with as much adventure as possible—camping under starry skies, hopping between national parks, and swimming in glacier lakes that were way colder than they looked.<br> <br>
+                We hiked through rugged trails, battled a small army of mosquitos, and wandered through some of the most stunning alpine scenery I've ever experienced. It was one of those trips where every day felt like three rolled into one—exhausting, exhilarating, and absolutely unforgettable.
+            </p>
+
+            <a href="../rls-website-htmlfiles/rls-languages-travel.html" class="explorations-button">Read More</a> 
+
+        </div>
+
+        <!--RECENT EXPLORATIONS 2 - NETHERLANDS AND CROATIA-->
+
+        <div class="explorations-container explorations-container-right">
+
+            <video class="explorations-video2 video-netherlands" muted loop preload="metadata">
+                <source src="../rls-website-media/netherlands-video1.mp4">
+            </video>
+
+            <h3 class="explorations-title1">Exploring the Netherlands & Croatia</h3>
+
+            <p class="explorations-text-right">
+            This past year brought a whole new set of adventures—traveling through the Netherlands and Croatia. From biking along Dutch canals to wandering stone streets on the Adriatic, each place had its own rhythm and surprises.<br><br> 
+            Whether I was reconnecting with friends, exploring historic towns, or soaking up the coastline, both countries offered unforgettable experiences and plenty of inspiration for future travels.
+            </p>
+
+            <a href="../rls-website-htmlfiles/rls-languages-travel.html" class="explorations-button-left">Read More</a>
+
+        </div>
+
+        <!--RECENT EXPLORATIONS 3 - AUVIC-->
+
+        <div class="explorations-container explorations-container-auvic">
+
+            <video class="explorations-video1 video-auvic" muted loop preload="metadata">
+                <source src="../rls-website-media/auvic-logo1.mp4">
+            </video>
+
+            <h3 class="explorations-title1">AUVIC Branding & Visual Identity Project</h3>
+
+            <p class="explorations-text">
+             This project involves developing a fresh branding direction for AUVIC, with a focus on strong visual identity, clear communication and a cohesive digital presence. I'm working on color palettes, typography choices, and modernized layouts to create a bold and consistent design system.<br><br>
+            The final outcome will reflect AUVIC's innovative work and will enhance the club's professional image across web, print and digital platforms.
+            </p>
+
+             <a href="../rls-website-htmlfiles/rls-projects.html" class="explorations-button">Read More</a>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        function enableHoverVideo(selector) {
+            const video = document.querySelector(selector);
+            if (!video) return;
+
+            video.muted = true;
+
+            video.addEventListener("mouseenter", () => {
+                video.play();
+            });
+
+            video.addEventListener("mouseleave", () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        }
+
+        enableHoverVideo(".video-about");
+        enableHoverVideo(".video-rockies");
+        enableHoverVideo(".video-netherlands");
+        enableHoverVideo(".video-auvic");
+
+    </script>
+
+    <!--CONTACT SECTION-->
+
+<section id="contact" class="contact-section">
+
+    <h2 class="contact-title">CONTACT</h2>
+
+    <p class="contact-text">
+        I'd love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out anytime.
+    </p>
+
+    <a href="mailto:rowanlsalverda@gmail.com" class="contact-button">
+        Email Me
+    </a>
+
+</section>
+
+<footer>
+        <p> &copy; 2025 Rowan Salverda's Website</p>
+    </footer>
+
+</body>
+
+
+
+</html>
